@@ -45,3 +45,4 @@ var mapped = myMap(names, function (name) {
 
 console.log(mapped);
 
+//Snak lidt om promises - JavaScripts Futures :-)

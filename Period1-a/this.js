@@ -3,7 +3,7 @@
 
 var random = "random stuff1";
 function randomFunction() {
-    //'use strict' // - hvis vi prøver dette, så forsøger metoden at finde en random-attribut inde i scopet, hvilkt ikke findes.
+    //'use strict' // - Virker ikke, fordi der så ikke er noget objekt/context til at kalde random.
     console.log(this.random)
 }
 //Skal køres i en browser, før dette virker, da "global object" er "window", som er browseren.

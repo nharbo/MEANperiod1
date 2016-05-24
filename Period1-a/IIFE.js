@@ -5,7 +5,7 @@ function wrapperIIFE(){
     (function(){
         var someText = "hehehe"; //Vi laver et lokalt scope, som køres med det samme..
         console.log(someText);
-    })();
+    })(); //metoden bliver kaldt, grundet ();
 
     console.log(someText);
 
