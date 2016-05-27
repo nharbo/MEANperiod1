@@ -46,3 +46,16 @@ var mapped = myMap(names, function (name) {
 console.log(mapped);
 
 //Snak lidt om promises - JavaScripts Futures :-)
+
+//------------------------
+
+function printUsers(array, callback){
+    for (var i = 0; i < array.length; i++) {
+        var user = callback(array[i]);
+    }
+    return user;
+}
+
+var userprint = printUsers(names, function(name){
+    console.log("name: "+name);
+});

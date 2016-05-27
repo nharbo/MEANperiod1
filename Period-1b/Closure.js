@@ -1,4 +1,3 @@
-
 function functionScope() {
     var comeGetMe = "Come get me!";
 
@@ -35,11 +34,14 @@ getHello();                  // randomFunc's scope(private)
 var add = (function () {
     var counter = 0; //private, da den kun er tilgængelig i dette scope
 
-    function plusOne () { //lægger 1 til counter, hvergang den bliver kaldt, og udskriver
+    function plusOne() { //lægger 1 til counter, hvergang den bliver kaldt, og udskriver
         return console.log(counter += 1);
     }
+
     return {
-        doIt: function(){plusOne()}
+        doIt: function () {
+            plusOne()
+        }
     }
 });
 

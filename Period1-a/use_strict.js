@@ -3,6 +3,7 @@
 var useStrictEx1 = {
     useStrictOn: function () {
         "use strict";
+        //var x;
         return x = "when use strict is on"; //Giver fejl - variablen er ikke defineret, inden den får en værdi.
     },
     useStrictOff: function () {
